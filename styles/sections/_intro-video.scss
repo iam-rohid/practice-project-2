@@ -1,0 +1,39 @@
+.intro-video-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  .video {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+  }
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba($color: #181818, $alpha: 0.5);
+    .play-button {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+      outline: none;
+      border: none;
+      cursor: pointer;
+
+      transition: filter 150ms ease-in-out;
+
+      &:hover {
+        filter: brightness(1.1);
+      }
+      &:active {
+        filter: brightness(0.9);
+      }
+    }
+  }
+}

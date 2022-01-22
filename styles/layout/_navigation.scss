@@ -1,0 +1,79 @@
+.nav-bar {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  height: 120px;
+
+  &.sticky {
+    height: 64px;
+  }
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left-wrapper,
+    .right-wrapper {
+      display: flex;
+      flex: 1;
+      height: 100%;
+      align-items: center;
+    }
+    .right-wrapper {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.fullscreen-navigation-window {
+  transition: top ease-in-out 300ms;
+  top: -100vh;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #282828;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  &.show {
+    top: 0;
+  }
+  .close-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    @include onDesktop {
+      right: 4rem;
+    }
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+
+    .menu-item {
+      font-size: 3rem;
+      font-weight: bold;
+      a {
+        text-decoration: none;
+        color: #fff;
+        padding: 1rem;
+        display: inline-block;
+        opacity: 0.8;
+        transition: opacity 150ms ease-in-out;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

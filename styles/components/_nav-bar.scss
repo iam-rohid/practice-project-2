@@ -1,0 +1,22 @@
+.nav-bar {
+  transition: all 150ms ease-in-out;
+  border-bottom: 1px solid rgba($color: #fff, $alpha: 0);
+  backdrop-filter: blur(0rem);
+  &.sticky {
+    backdrop-filter: blur(1rem);
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.15);
+  }
+
+  .logo {
+    transition: filter 150ms ease-in-out;
+    &:hover {
+      filter: brightness(1.1);
+    }
+    &:active {
+      filter: brightness(0.9);
+    }
+    img {
+      height: 1.5rem;
+    }
+  }
+}

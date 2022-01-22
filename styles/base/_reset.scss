@@ -1,0 +1,29 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+body {
+  background-color: #0a0a0d;
+  color: #fff;
+}
+
+.container {
+  padding: 0 2rem;
+
+  @include onDesktop {
+    padding: 0 4rem;
+  }
+}

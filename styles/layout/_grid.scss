@@ -1,0 +1,32 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+
+  .wrapper {
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    @include onTablet {
+      flex-direction: row;
+    }
+    .left-section,
+    .right-section {
+      min-height: 400px;
+      @include onTablet {
+        flex: 1;
+        max-height: 1080px;
+        height: 100vh;
+      }
+    }
+  }
+  .banner {
+    width: 100%;
+    @include onDesktop {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

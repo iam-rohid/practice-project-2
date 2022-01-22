@@ -1,4 +1,5 @@
 @use "variables" as *;
+
 @mixin onDesktop {
   @media (min-width: $desktop-width) {
     @content;

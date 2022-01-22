@@ -1,3 +1,5 @@
+@use "../abstracts/mixins" as *;
+
 .nav-bar {
   position: fixed;
   z-index: 100;

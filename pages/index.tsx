@@ -3,6 +3,7 @@ import {
   PartnersSection,
   HeroSection,
   IntroVideoSection,
+  HighlightsSection,
 } from "../components/sections";
 
 const HomePage = () => {
@@ -11,6 +12,7 @@ const HomePage = () => {
       <HeroSection />
       <IntroVideoSection />
       <PartnersSection />
+      <HighlightsSection />
     </Fragment>
   );
 };

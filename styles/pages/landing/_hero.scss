@@ -3,7 +3,7 @@
 
 .hero-section {
   .wrapper {
-    .left-section {
+    .left-wrapper {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -61,7 +61,7 @@
         }
       }
     }
-    .right-section {
+    .right-wrapper {
       background-color: $priamry-color;
       position: relative;
       @include onTablet {

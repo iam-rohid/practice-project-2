@@ -1,6 +1,7 @@
 @use "../abstracts/mixins" as *;
 
-.hero-section {
+.hero-section,
+.highlight-section {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -14,8 +15,8 @@
     @include onTablet {
       flex-direction: row;
     }
-    .left-section,
-    .right-section {
+    .left-wrapper,
+    .right-wrapper {
       min-height: 400px;
       @include onTablet {
         flex: 1;

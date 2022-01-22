@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section id="hero" className="hero-section">
       <div className="wrapper">
-        <div className="left-section">
+        <div className="left-wrapper">
           <div className="content">
             <a href="#" className="gradient-button">
               🎉 Join waiting list
@@ -37,7 +37,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="right-section">
+        <div className="right-wrapper">
           <div className="alignment-test"></div>
           <img
             src="/images/hero-image.png"

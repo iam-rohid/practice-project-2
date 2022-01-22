@@ -1,0 +1,86 @@
+@use "../../abstracts/mixins" as *;
+
+.highlight-section {
+  .wrapper {
+    flex-direction: column-reverse;
+    @include onTablet {
+      flex-direction: row;
+    }
+    .left-wrapper {
+      position: relative;
+      @include onTablet {
+        overflow: hidden;
+      }
+      .highlight-image {
+        position: absolute;
+        transform: translate(-65%, -41%);
+        left: 50%;
+        top: 50%;
+        @include onTablet {
+          top: 50%;
+        }
+        width: 500px;
+        height: 900px;
+        @include onDesktop {
+          width: 600px;
+          height: 900px;
+        }
+        object-fit: contain;
+      }
+    }
+    .right-wrapper {
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .content {
+        padding: 8rem 2rem;
+        @include onDesktop {
+          padding: 4rem;
+        }
+
+        .sub-title {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+        .title {
+          max-width: 700px;
+          font-size: 2.4rem;
+          margin-bottom: 2rem;
+          @include onTablet {
+            font-size: 3rem;
+          }
+        }
+        .description {
+          font-size: 1.2rem;
+          opacity: 0.8;
+          max-width: 700px;
+          margin-bottom: 3rem;
+        }
+
+        .buttons-wrapper {
+          display: flex;
+          gap: 2rem;
+          justify-content: center;
+          @include onTablet {
+            justify-content: flex-start;
+          }
+          .highlight-button {
+            outline: none;
+            border: none;
+            width: 6rem;
+            aspect-ratio: 1;
+            border-radius: 100%;
+            cursor: pointer;
+
+            background: linear-gradient(to right bottom, #535355, #1a1c1e);
+            &.active {
+              background: linear-gradient(to right bottom, #291dc8, #721fff);
+            }
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

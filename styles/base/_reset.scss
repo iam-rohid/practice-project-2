@@ -27,5 +27,8 @@ body {
 
   @include onDesktop {
     padding: 0 4rem;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

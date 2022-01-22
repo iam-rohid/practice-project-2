@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import "tailwindcss/tailwind.css";
 import Header from "../components/Header";
 import "../styles/main.scss";
 
